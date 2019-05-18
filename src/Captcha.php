@@ -275,6 +275,7 @@ class Captcha
         return $api ? [
             'sensitive' => $generator['sensitive'],
             'key' => $generator['key'],
+            'value' => $generator['value'],
             'img' => $this->image->encode('data-url')->encoded
         ] : $this->image->response('png', $this->quality);
     }
